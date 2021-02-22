@@ -1,0 +1,22 @@
+version: '3.4'
+services:
+  back:
+    build: ./back
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    networks:
+      - net
+    environment:
+      - HOST=0.0.0.0
+
+  front:
+    build: ./front
+    restart: unless-stopped
+    networks:
+      - net
+    ports:
+      - "8080:8080"
+
+networks:
+  net:

@@ -1,0 +1,9 @@
+Flask==1.1.2
+requests==2.8.1
+Pillow
+joblib
+pandas
+numpy>=1.14.5
+scipy>=0.15.1
+scikit_learn
+flask_cors
